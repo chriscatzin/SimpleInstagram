@@ -56,7 +56,7 @@ public class AppActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment fragment = new ComposeFragment();
+                Fragment fragment = null;
                 switch (item.getItemId()) {
                     case R.id.action_home:
                         fragment = new PostsFragment();
