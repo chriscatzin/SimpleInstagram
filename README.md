@@ -1,23 +1,30 @@
-# Project 3 - SimpleInstagram
+# Project 3 - *SimpleInstagram*
 
 **SimpleInstagram** is a photo sharing app similar to Instagram but using Parse as its backend.
 
-Time spent: **11.5** hours spent in total
+Time spent: **27** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [x] User can sign up to create a new account using Parse authentication.
-- [] User can log in and log out of his or her account.
-- [x] The current signed in user is persisted across app restarts.
-- [x] User can take a photo, add a caption, and post it to "Instagram".
+- [x] User can view the last 20 posts submitted to "Instagram".
+- [ ] User can pull to refresh the last 20 posts submitted to "Instagram".
+- [x] The user should switch between different tabs - viewing all posts (feed view), capture (camera and photo gallery view) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
 
 The following **optional** features are implemented:
 
-- [ ] User sees app icon in home screen and styled bottom navigation view
 - [ ] Style the feed to look like the real Instagram feed.
-- [ ] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
+- [x] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling.
+- [ ] Show the username and creation time for each post.
+- [ ] User can tap a post to view post details, including timestamp and caption.
+- [x] User Profiles
+      - [ ] Allow the logged in user to add a profile photo
+      - [ ] Display the profile photo with each post
+- [ ] Tapping on a post's username or profile photo goes to that user's profile page and shows a grid view of the user's posts
+- [ ] User can comment on a post and see all comments for each post in the post details screen.
+- [ ] User can like a post and see number of likes for each post in the post details screen.
+- [x] Run your app on your phone and use a custom camera view
 
 The following **additional** features are implemented:
 
@@ -27,15 +34,23 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+## PART ONE GIF
+
 <img src='https://github.com/chriscatzin/SimpleInstagram/blob/master/SimpleInstagram.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+## PART TWO GIF
+
+<img src='https://github.com/chriscatzin/SimpleInstagram/blob/master/SimpleInstagram-PartTwo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Notes
 
 Describe any challenges encountered while building the app.
 
-I had trouble trying to create the login and logout methods. My goal for this week is to try to implement those 
-methods to this app. Overall, I did not have any other issues and I'm looking forward to Part two of this project.
+My app kept on crashing, so I ended up trying a new emulator. That new emulator seemed to have fixed the problem.
+Also I had invalid session tokens when I was trying to run my app, turns out I was misspelling a word in one of
+my tokens. Overall this was a well-learning project, and I learned so much that I did not know before!
 
 ## Open-source libraries used
 
